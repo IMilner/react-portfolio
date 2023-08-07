@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  /* background-image: url(../../public/images/artin-bakhan-SqLyNHbsLKQ-unsplash\(resize-1440x1080\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Set to 0 to hide completely */
+}
+

@@ -1,0 +1,43 @@
+.moved-up {
+    transform: translateY(-100%);
+    transition: transform 0.75s;
+}
+  
+nav {
+    box-sizing: border-box;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: transform 0.75s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+}
+  
+.hide {
+    transform: translateY(-100%);
+}
+  
+.show {
+    transform: translateY(0);
+}
