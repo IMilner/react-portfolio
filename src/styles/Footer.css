@@ -1,32 +1,37 @@
-#contact {
-    height: 100vh;
-    width: 100%;
-}
-
 /* CONTACT SECTION */ 
 
-.footerBtmDiv {
+#contact {
+    box-sizing: border-box;
+    border-top: #333 solid 0.1em;
     /* background-color: yellow; */
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.btmDivLeft {
-    height: 100%;
+
+.divLeft {
+    background-color: #333;
+    height: 75%;
     width: 50%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+/* LEFT SECTION */
+
 form {
-    width: 50%;
+    /* margin: 0; */
+    box-sizing: border-box;
+    /* background-color: yellow; */
     height: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,24 +39,58 @@ form {
 }
 
 input {
+    box-sizing: border-box;
     padding: 10px;
-    width: 100%;
-    font-size: 1.5em;
+    width: 75%;
+    font-size: 1.2em;
     font-family: Raleway;
     border: 1px solid #aaaaaa;
 }
 
 #submitBtn {
+    padding: 10px;
+    width: 50%;
+    font-size: 1.5em;
+    /* font-family: Raleway; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #aaaaaa;
+    border-radius: 1em 1em 1em 1em;
     cursor: pointer;
+    color: #333;
 }
 
-.btmDivRight {
-    height: 100%;
+.errorMessage {
+    color: rgba(255, 0, 0, 0.75);
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* letter-spacing: 0.1em; */
+}
+
+.formH4 {
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.successMessage {
+    color: yellowgreen;
+}
+
+/* RIGHT SECTION*/
+
+.divRight {
+    background-color: #333;
+    height: 75%;
     width: 50%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .iconDiv {
@@ -69,46 +108,32 @@ input {
     justify-content: space-evenly;
 }
 
+.iconDiv a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .iconDiv img {
-    width: 75%;
+    width: 50%;
 }
 
 #profile-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
-    
     padding: 0.5em;
     color: rgba(30, 143, 255, 0.75);
     background-color: white;
     border-radius: 1em 1em 1em 1em;
+
 }
 
-.btmBdy h1 {
-    color: white;
-    font-size: 7em;
-    font-weight: lighter;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.btmBdy h3 {
+.footerH3 {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
     font-weight: lighter;
     margin: 10px 0 20px 0;
-}
-
-.btmBdy h4 {
-    color: white;
-    font-size: 2em;
-    font-weight: lighter;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-}
-
-textarea {
-    padding: 10px;
-    width: 100%;
-    font-size: 1.5em;
-    font-family: Raleway;
-    border: 1px solid #aaaaaa;
+    letter-spacing: 0.1em;
 }

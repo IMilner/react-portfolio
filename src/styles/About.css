@@ -1,40 +1,54 @@
 #about {
-    box-sizing: border-box;
-    /* border: white 3px solid; */
-    height: 100vh;
-    width: 100vw;
-    padding: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-img {
-    height: 50%;
+  box-sizing: border-box;
+  border-top: #333 solid 0.1em;
+  border-bottom: #333 solid 0.1em;
+  height: 100vh;
+  width: 100vw;
+  /* padding: 5em 1em 1em 1em; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .div1Img {
-    box-sizing: border-box;
-    border: solid black 5px;
-    height: 100%;
-    /* background-image: url(../../public/images/johnSnowTransparent.png); */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: contain; */
+  box-sizing: border-box;
+  /* border: solid black 5px; */
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(../../public/images/johnSnowTransparent.png); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+}
+
+img {
+  height: 75%;
 }
 
 .div2Txt {
-    width: 50%;
-    height: 80%;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    line-height: 25px;
-    font-size: 1.2em;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  box-sizing: border-box;
+  height: 90%;
+  width: 45%;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutTitle {
+  margin: 0;
+  letter-spacing: 0.1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
 }

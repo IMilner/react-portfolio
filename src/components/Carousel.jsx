@@ -14,21 +14,25 @@ function Carousel() {
       id: 2,
       src: "Images/surveyImg.PNG",
       title: "Survey",
+      link: "/Survey",
     },
     {
       id: 3,
       src: "Images/tecDocImg.PNG",
       title: "TecDoc",
+      link: "/Technial-Doc",
     },
     {
       id: 4,
       src: "Images/safetyPlanImg2.PNG",
       title: "SafetyPlan",
+      link: "/Safety-Plan",
     },
     {
       id: 5,
       src: "Images/landingPageImg.PNG",
       title: "LandingPage",
+      link: "Product-Landing-Page",
     },
   ];
 
@@ -45,38 +49,47 @@ function Carousel() {
   return (
     <>
       <div id="carousel">
-        <div className="items">
-          <div className="item prev">
-            <img
-              src={
-                currentImageIndex === 0
-                  ? images[images.length - 1].src
-                  : images[currentImageIndex - 1].src
-              }
-              alt="1"
-            />
-          </div>
-          <div className="item active">
-            <img src={images[currentImageIndex].src} alt="2" />
-            <a href={images[currentImageIndex].link}></a>
-            <p>{images[currentImageIndex].title}</p>
-          </div>
-          <div className="item next">
-            <img
-              src={
-                currentImageIndex === 4
-                  ? images[0].src
-                  : images[currentImageIndex + 1].src
-              }
-              alt="3"    
-            />
-          </div>
-          <div className="button-container">
-            <button className="button" onClick={prevImage}></button>
-
-            <button className="button" onClick={nextImage}></button>
-          </div>
+        <div className="item prev" onClick={prevImage}>
+          <img
+            src={
+              currentImageIndex === 0
+                ? images[images.length - 1].src
+                : images[currentImageIndex - 1].src
+            }
+            alt="1" 
+          />
+          <p>
+            {currentImageIndex === 0
+              ? images[images.length - 1].title
+              : images[currentImageIndex - 1].title}
+          </p>
         </div>
+        <div className="item active">
+          <a href={images[currentImageIndex].link}>
+            <img src={images[currentImageIndex].src} alt="2" />
+            <p>{images[currentImageIndex].title}</p>
+          </a>
+        </div>
+        <div className="item next" onClick={nextImage}>
+          <img
+            src={
+              currentImageIndex === 4
+                ? images[0].src
+                : images[currentImageIndex + 1].src
+            }
+            alt="3"
+          />
+          <p>
+            {currentImageIndex === 4
+              ? images[0].title
+              : images[currentImageIndex + 1].title}
+          </p>
+        </div>
+        {/* <div className="button-container">
+          <button className="button" ></button>
+
+          <button className="button" ></button>
+        </div> */}
       </div>
     </>
   );

@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "./Carousel";
 import "../styles/Projects.css";
 
 function Projects() {
   return (
     <>
-      <div className="projects">
-        <h1 id="projects">PROJECTS</h1>
-        <Carousel />
+      <div id="projects">
+        <h1 id="projectsTitle">PROJECTS</h1>
+        <Carousel></Carousel>
       </div>
     </>
   );
