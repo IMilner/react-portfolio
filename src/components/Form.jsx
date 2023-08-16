@@ -29,7 +29,7 @@ function Form() {
     setSuccess(true);
   }
 
-  const submitButton = document.getElementsByClassName("submitBtn");
+  // const submitButton = document.getElementsByClassName("submitBtn");
 
   return (
     <>
